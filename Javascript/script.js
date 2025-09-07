@@ -62,7 +62,7 @@ const playmusic = (track, pause = false) => {
 // ✅ fixed: no folder fetch, use pre-listed albums
 async function displayalbums() {
   // here you can hardcode album folders
-  const albums = ["Anime"]; // add more: ["Anime","Rock","Pop"]
+  const albums = ["Anime", "english"]; // add more: ["Anime","Rock","Pop"]
 
   for (let folder of albums) {
     let response = await fetch(`songs/${folder}/info.json`);
@@ -170,3 +170,4 @@ async function main() {
   });
 }
 main();
+
