@@ -17,7 +17,7 @@ function formatTime(seconds) {
 
 async function getsongs(folder) {
   crrFolder = folder;
-  let a = await fetch(`/${folder}/`)
+  let a = await fetch(`${folder}/`)
   let response = await a.text();
   let div = document.createElement("div")
   div.innerHTML = response;
@@ -61,7 +61,7 @@ async function getsongs(folder) {
 
 const playmusic = (track, pause = false) => {
   //   let audio = new Audio("/songs/" + track)
-  currentsong.src = `/${crrFolder}/` + track
+  currentsong.src = `${crrFolder}/` + track
   if (!pause) {
     currentsong.play()
     play.src = "icons/pause.svg"
@@ -103,7 +103,7 @@ async function displayalbums() {
 
 
                         </div>
-                        <img src="/songs/${folder}/cover.jpg"alt="">
+                        <img src="songs/${folder}/cover.jpg"alt="">
                         <h2>${response.Title}</h2>
                         <p>${response.description}</p>
                         </div> `
@@ -228,4 +228,5 @@ async function main() {
 
 }
 main()
+
 
