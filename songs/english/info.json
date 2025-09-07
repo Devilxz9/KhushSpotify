@@ -1,7 +1,6 @@
 {
-"Title": "Your Songs",
-"description": "Enjoy Your Songs Khushuu"
-
+  "Title": "Your Songs",
+  "description": "Enjoy Your Songs Khushuu",
   "songs": [
     "All The Things She Said.mp3",
     "belle-poarch-build-a-bitch.mp3",
@@ -12,5 +11,5 @@
     "maneskin-i-wanna-be-your-slave.mp3",
     "Red Rover.mp3"
   ]
-
 }
+
