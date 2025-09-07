@@ -50,7 +50,7 @@ async function getsongs(folder) {
 }
 
 const playmusic = (track, pause = false) => {
-  currentsong.src = `${crrFolder}/` + track;
+  currentsong.src = encodeURI(`${crrFolder}/` + track;)
   if (!pause) {
     currentsong.play();
     play.src = "icons/pause.svg";
@@ -170,4 +170,5 @@ async function main() {
   });
 }
 main();
+
 
