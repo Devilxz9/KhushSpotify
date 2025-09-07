@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root{
+    --a:0;
+}
+body {
+    background-color: black;
+    color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.left {
+    width: 25%;
+    padding: 10px;
+}
+
+.right {
+    width: 75%;
+    margin: 16px 0px;
+    position: relative;
+
+}
+
+.logo img {
+    height: 70px;
+    padding-bottom: 4px;
+}
+
+.home ul li {
+    width: 17px;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    padding-top: 20px;
+}
+
+.home {}
+
+.libleft {
+    height: 24px;
+    /* margin-right: 8px; */
+    padding: 10px;
+
+}
+
+.library {
+    display: flex;
+    /* align-items: center; */
+    min-height: 80vh;
+    flex-direction: column;
+    position: relative;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+
+.library h1 {
+    font-size: 20px;
+}
+
+.footer {
+    display: flex;
+    font-size: 11px;
+    gap: 6px;
+    color: gray;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.footer a {
+    color: grey;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+}
+
+.header>* {
+    padding: 25px;
+}
+
+.card {
+    width: 200px;
+    background-color: rgb(25, 25, 25);
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 1s;
+}
+.card:hover{
+    background-color: rgb(54, 54, 54);
+    cursor: pointer;
+    --a:1;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+    justify-self: center;
+
+
+}
+
+.card p {
+    font-size: 16px;
+}
+
+.card>* {
+    padding: 6px;
+}
+
+.card-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 30px;
+    max-height: 68vh;
+    overflow-y: auto;
+
+}
+
+.hamburger {
+    display: none;
+}
+
+.play svg {
+    width: 53px;
+    /* height: 180px; */
+    height: 57px;
+    position: absolute;
+    top: 161px;
+    left: 147px;
+    opacity: var(--a);
+    transition: all .5s ease-out;
+}
+
+.play .bg {
+    fill: #1fdf64;
+}
+
+.play .button {
+    fill: rgb(0, 0, 0);
+}
+
+.signup-btn {
+    background-color: white;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px rgb(0 0 0 / 60%);
+    outline: none;
+}
+
+.signup-btn:hover {
+    color: rgb(78, 76, 76);
+
+}
+
+.login-btn:hover {
+    color: rgb(78, 76, 76);
+    wid
+}
+
+.login-btn {
+    background-color: white;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+}
+
+.playbar {
+    position: fixed;
+    bottom: 30px;
+    background-color: rgb(34, 34, 34);
+    width: 71%;
+    padding: 12px;
+    border-radius: 24px;
+    min-height: 78px;
+}
+
+.songbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px
+}
+
+.songbuttons img {
+    height: 46px;
+}
+
+.songlist ul {
+    padding: 30px 9px;
+}
+
+.songlist ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 0px;
+    border: 1px solid white;
+    margin: 9px 0px;
+    padding: 14px;
+    border-radius: 13px;
+}
+
+.playnow img {
+    height: 25px;
+}
+
+.playnow {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.playnow span {
+    font-size: 12px;
+
+}
+
+.songlist .info {
+    font-size: 14px;
+    width: 344px;
+}
+
+.songlist {
+    height: 580px;
+    overflow: scroll;
+    margin-bottom: 44px;
+}
+
+.seekbar {
+    height: 5px;
+    background-color: white;
+    width: 90%;
+    position: absolute;
+    bottom: 14px;
+    right: 48px;
+
+}
+
+.circle {
+    height: 14px;
+    background-color: #c0bebe;
+    width: 13px;
+    border-radius: 8px;
+    position: absolute;
+    top: -4px;
+    left: 0%;
+    transition: left 0.5s;
+}
+
+
+.abovebar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.songinfo{
+    color: white;
+    padding: 0px 20px;
+    width: 155px
+}
+.songtime{
+    padding: 0;
+    width: 111px;
+}
+
+.info div {
+    word-break: break-all;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 37px;
+    font-size: 36px;
+}
+
+.hamburger2 {
+    display: none;
+}
+
+@media (max-width: 1400px) {
+    .left {
+        /* background-color: red; */
+        position: absolute;
+        left: -120%;
+        transition: all 0.5s;
+        z-index: 1;
+        width: 380px;
+        padding: 0;
+    }
+
+    .right {
+        width: 100vw;
+    }
+
+    .playbar {
+        width: 95vw;
+        right: 10px;
+        height: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seekbar {
+        height: 5px;
+        width: 78%;
+        bottom: 14px;
+        right: 43px;
+    }
+
+    .hamburger {
+        display: block;
+        height: 100px;
+    }
+
+    .nav {
+        width: 22px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .hamburger2 {
+        display: block;
+    }
+
+    .login-btn {
+        height: 5vh;
+        width: 12vh;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+    }
+
+    .signup-btn {
+        height: 5vh;
+        width: 12vh;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+    }
+
+    .songinfo,
+    .songtime {
+        width: auto;
+    }
+
+    .buttons {
+        width: 21vh;
+        height: 11vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.volume-btn {
+    /* position: absolute; */
+    /* right: 146px; */
+    /* bottom: 20px; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    /* margin-right: -53px; */
+}
+.volume-btn input{
+    accent-color: rgb(99, 94, 89);
+    cursor: pointer;
+}
+
+.timevol {
+    display: flex;
+    align-items: center;
+}

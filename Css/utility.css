@@ -1,0 +1,62 @@
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+/* .border{
+    border: 2px solid red;
+    margin: 2px;
+} */
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.invert{
+    filter: invert(1);
+}
+.bg-grey{
+    background-color: #121212;
+}
+.rounded{
+    border-radius: 8px;
+}
+.m-1{
+    margin: 5px;
+}
+.p1{
+    padding: 10px;
+}
+.spotify-playlist{
+    padding: 20px;
+}
+.border{
+    border: 2px solid red;
+}
+
+
+/* For Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;              /* scrollbar width */
+  height: 8px;             /* scrollbar height (for horizontal scroll) */
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;     /* dark background track */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #444, #222);  /* dark gradient */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #666, #333);  /* lighter on hover */
+}
+.pointer{
+    cursor: pointer;
+}
