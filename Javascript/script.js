@@ -168,8 +168,33 @@ async function main() {
       range.value = 10;
     }
   });
+
+   // Add this somewhere in your main() function after other controls
+let repeatBtn = document.getElementById("repeat"); // your <img id="repeat" src="icons/repeat.svg">
+
+let isRepeating = false;
+
+repeatBtn.addEventListener("click", () => {
+  isRepeating = !isRepeating; // toggle on/off
+  repeatBtn.src = isRepeating ? "icons/notrepeat.svg" : "icons/repeat.svg";
+});
+
+// when song ends
+currentsong.addEventListener("ended", () => {
+  if (isRepeating) {
+    currentsong.currentTime = 0;
+    currentsong.play();
+  } else {
+    // normal next song behavior
+    let index = songs.indexOf(currentsong.src.split("/").slice(-1)[0]);
+    if (index + 1 < songs.length) {
+      playmusic(songs[index + 1]);
+    }
+  }
+});
 }
 main();
+
 
 
 
