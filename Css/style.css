@@ -493,3 +493,8 @@ body {
         border-radius: 20px;
     }
 }
+
+.repeatbtn  img{
+    cursor: pointer;
+}
+
